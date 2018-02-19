@@ -104,4 +104,17 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | JWT Secrect
+    |--------------------------------------------------------------------------
+    |
+    | Here we load up the secret to be used for signing and verifying JWT tokens;
+    | We also set the time it takes the token to expire in secods 
+    |
+    */
+    'JWT' => [
+        'secret' => env('JWT_SECRET', 'secret'),
+        'expiry' => env('JWT_EXPIRY', 3600),
+    ],
 ];
